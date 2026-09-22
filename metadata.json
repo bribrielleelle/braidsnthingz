@@ -1,0 +1,6 @@
+{
+  "name": "AURA Atelier Salon",
+  "description": "Y2K MySpace-inspired hair studio and booking experience for talatasva featuring Top 8 stylists, retro music player, custom services, and real-time appointment reservation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

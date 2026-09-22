@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "VT323", monospace;
+
+  --color-y2k-pink: #FF1493;
+  --color-y2k-hotpink: #FF2A85;
+  --color-y2k-magenta: #E6007A;
+  --color-y2k-deep-wine: #5E1226;
+  --color-y2k-dark-plum: #2D0610;
+  --color-y2k-black: #0A0508;
+  --color-y2k-charcoal: #170E14;
+  --color-y2k-card: #FFFFFF;
+  --color-y2k-border: #FFB6C1;
+  --color-y2k-baby-pink: #FFE4EC;
+  --color-y2k-gold: #FFD700;
+}
+
+@layer base {
+  body {
+    background-color: #0A0508;
+    color: #2C2428;
+  }
+}
+
+/* Y2K Pink Leopard Print Pattern on Dark Background (as seen in the Pinterest MySpace inspiration) */
+.bg-leopard-pattern {
+  background-color: #0D0509;
+  background-image: 
+    radial-gradient(#E6007A 15%, transparent 16%),
+    radial-gradient(#5E1226 15%, transparent 16%),
+    radial-gradient(ellipse at 40% 40%, #AB054D 20%, transparent 22%),
+    radial-gradient(circle at 80% 20%, #D4678F 12%, transparent 14%),
+    radial-gradient(circle at 20% 80%, #3B0817 18%, transparent 20%);
+  background-position: 0 0, 30px 30px, 15px 15px, 45px 5px, 20px 45px;
+  background-size: 60px 60px;
+}
+
+/* Authentic MySpace style tables and borders */
+.y2k-table-header {
+  background: linear-gradient(180deg, #FF69B4 0%, #E6007A 50%, #C20063 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+.y2k-card-border {
+  border: 2px solid #FF69B4;
+  box-shadow: 0 4px 15px rgba(230, 0, 122, 0.25);
+}
+
+/* Glitter sparkle animation */
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
+}
+
+.animate-sparkle {
+  animation: sparkle 2.5s infinite ease-in-out;
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #170E14;
+}
+::-webkit-scrollbar-thumb {
+  background: #E6007A;
+  border-radius: 5px;
+  border: 2px solid #0A0508;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF2A85;
+}
